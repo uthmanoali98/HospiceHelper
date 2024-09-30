@@ -1,5 +1,5 @@
 const OpenAI = require("openai");
-const Message = require('../models/message');
+const Message = require('../models/Message');
 const Chat = require('../models/chat');
 const mongoose = require('mongoose');
 require('dotenv').config();
