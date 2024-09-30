@@ -1,6 +1,6 @@
 import './Medication.css';
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from '../../axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCapsules, faPlus } from '@fortawesome/free-solid-svg-icons';
 

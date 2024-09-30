@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserNurse, faChalkboardTeacher, faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios';
+import axios from '../../axios';
 import ChatItem from '../ChatItem/ChatItem';
 import './Report.css';
 

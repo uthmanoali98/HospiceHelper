@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './FamilyMembers.css';
-import axios from 'axios';
+import axios from '../../axios';
 
 // Modal Component
 const Modal = ({ isOpen, onClose, onSubmit, member = {} }) => {
