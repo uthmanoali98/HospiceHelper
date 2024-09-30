@@ -1,0 +1,39 @@
+/* History section styling */
+
+.history-section {
+    flex-grow: 1;
+    /* Less space relative to Chat */
+    width: 25%;
+    /* Specify width if necessary */
+    padding: 20px;
+    /* Consistent padding with Chat */
+    background-color: #ffffff;
+    box-shadow: -1px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-history .chat-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+    background-color: #98c4a3;
+    /* Green background on hover */
+    color: #ffffff;
+    /* Whitish text on hover */
+}
+
+.chat-item:hover h3,
+.chat-item:hover p {
+    color: #ffffff;
+    /* Ensures all text in the item changes color */
+}
+
+.chat-history h3,
+.chat-history p {
+    margin-bottom: 5px;
+}

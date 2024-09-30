@@ -1,0 +1,109 @@
+/* Chat section styling */
+.chat-container {
+    display: flex;
+    /* Enables flexbox layout */
+    align-items: stretch;
+    /* Stretches both children to full height */
+    width: 100%;
+    /* Takes full width of its parent */
+}
+
+.chat-section {
+    flex-grow: 3;
+    /* Takes more space relative to History */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    /* Allow scrolling for longer chats */
+}
+
+
+.input-container {
+    position: relative;
+    /* Change to relative for bounding inside chat-section */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Full width of the chat-section */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+    /* Optional shadow for depth */
+}
+
+textarea {
+    flex-grow: 1;
+    height: 40px;
+    border: 2px solid #aad1b6;
+    /* Green accent border */
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 10px;
+    resize: none;
+    /* Prevent resizing */
+}
+
+.icon-button {
+    border: none;
+    background-color: #aad1b6;
+    /* Green background */
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    /* Square-ish rounded corners */
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: #98c4a3;
+    /* Lighter green on hover */
+}
+
+.chat-box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 15px;
+    color: #fff;
+    /* Default text color */
+    align-self: flex-start;
+    /* Align messages to the start by default */
+}
+
+.user-message {
+    background-color: #aad1b6;
+    /* Green color for user messages */
+    color: #fff;
+    /* White text for visibility */
+    align-self: flex-end;
+    /* Align user messages to the right */
+}
+
+.bot-message {
+    background-color: #2a3f5f;
+    /* Darker color for bot messages */
+    color: #fff;
+    /* White text for visibility */
+}

@@ -1,0 +1,51 @@
+/* Sidebar styling */
+.sidebar {
+    width: 20%;
+    background-color: #2a3f5f;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #aad1b6;
+    /* Soft green for headings */
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar li svg {
+    margin-right: 10px;
+}
+
+.sidebar li:hover {
+    background-color: #324d67;
+    /* Darker shade for hover */
+}
+
+/* Specific adjustments for sidebar to differentiate from other headers */
+.sidebar h2 {
+    color: #ffffff;
+    /* Maintaining white for contrast against the sidebar background */
+    border-bottom: none;
+    /* No line for sidebar header to keep it clean */
+}
+
+.sidebar li.active {
+    background-color: #aad1b6;
+    /* Highlight color for active tab */
+    color: #ffffff;
+    /* Text color for active tab */
+}

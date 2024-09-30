@@ -1,0 +1,46 @@
+.resources-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Adjusted to the consistent off-white */
+}
+
+.resources-title {
+    color: #2a3f5f;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.resource-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    /* Card white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions for transform and shadow */
+}
+
+.resource-section:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow for a more pronounced lift */
+}
+
+.resource-section h2 {
+    color: #2a3f5f;
+    font-size: 1.5em;
+}
+
+.resource-section p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.icon {
+    color: #50C878;
+    /* Green color for icons */
+    margin-right: 10px;
+}

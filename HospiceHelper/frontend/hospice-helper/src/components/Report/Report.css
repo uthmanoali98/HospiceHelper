@@ -1,0 +1,95 @@
+.report-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Limit the maximum width */
+    margin: auto;
+    /* Center the container */
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.report-title {
+    color: #2a3f5f;
+    margin-bottom: 20px;
+}
+
+.report-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-chats,
+.report-details {
+    flex: 1;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.generate-report-btn,
+.save-report-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.generate-report-btn:hover,
+.save-report-btn:hover {
+    background-color: #369636;
+}
+
+.report-preview {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Ensure all sections have appropriate spacing */
+.report-details>div {
+    margin-bottom: 20px;
+}
+
+/* Adjust the textarea to take more space for more detailed input */
+.report-purpose textarea {
+    height: 120px;
+    width: 100%;
+}
+
+/* Styling adjustments for radio buttons and labels for better alignment */
+.tone-selection label {
+    display: block;
+    margin: 10px 0;
+}
+
+.generate-report-btn,
+.save-report-btn {
+    font-size: 1.2em;
+    /* Larger text */
+}
+
+select {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    /* Adjust box sizing to include padding and border */
+}
