@@ -22,6 +22,7 @@ app.use(express.json());
 const uri = process.env.MONGO_DB_KEY;
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 
+
 // Connection to MongoDB
 async function connectDB() {
     try {
@@ -76,5 +77,5 @@ app.post('/add-message', addMessage);
 
 
 
-
+consol.log("Hello Workd");
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
