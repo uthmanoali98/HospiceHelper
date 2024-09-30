@@ -38,7 +38,7 @@ const Report = () => {
     useEffect(() => {
         const fetchChats = async () => {
             try {
-                const res = await axios.get('http://localhost:9001/chats/USoG7PoIhX');
+                const res = await axios.get('/chats/USoG7PoIhX');
                 setChats(res.data.map(chat => ({
                     id: chat._id,
                     title: `Chat on ${new Date(chat.day).toDateString()}`,
@@ -67,7 +67,7 @@ const Report = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:9001/generate-report', reportData);
+            const response = await axios.post('/generate-report', reportData);
             setGeneratedReport(formatReport(response.data.report));
         } catch (error) {
             console.error("Error generating report:", error);

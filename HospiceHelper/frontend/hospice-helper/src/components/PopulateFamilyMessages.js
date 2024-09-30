@@ -39,7 +39,7 @@ const PopulateFamilyMessages = () => {
         const populateMessages = async () => {
             try {
                 for (const message of messages) {
-                    await axios.post('http://localhost:9001/add-message', message);
+                    await axios.post('/add-message', message);
                     console.log(`Message from ${message.from} added.`);
                 }
             } catch (error) {

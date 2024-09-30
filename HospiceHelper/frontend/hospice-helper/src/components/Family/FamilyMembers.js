@@ -91,7 +91,7 @@ const FamilyMembers = () => {
     useEffect(() => {
         const fetchFamilyMembers = async () => {
             try {
-                const res = await axios.get('http://localhost:9001/family-members');
+                const res = await axios.get('/family-members');
                 setFamilyMembers(res.data); // Set family members in state
             } catch (error) {
                 console.error('Error fetching family members:', error);
@@ -106,7 +106,7 @@ const FamilyMembers = () => {
         if (isEditing) {
             // Update existing member
             try {
-                const res = await axios.put(`http://localhost:9001/family-members/${selectedMember._id}`, memberData);
+                const res = await axios.put(`/family-members/${selectedMember._id}`, memberData);
                 const updatedMembers = familyMembers.map(member =>
                     member._id === res.data._id ? res.data : member
                 );
@@ -117,7 +117,7 @@ const FamilyMembers = () => {
         } else {
             // Add new member
             try {
-                const res = await axios.post('http://localhost:9001/family-members/new', memberData);
+                const res = await axios.post('/family-members/new', memberData);
                 setFamilyMembers([...familyMembers, res.data]);
             } catch (error) {
                 console.error('Error adding family member:', error);

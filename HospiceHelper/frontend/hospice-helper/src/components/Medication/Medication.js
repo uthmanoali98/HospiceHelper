@@ -68,7 +68,7 @@ const Medication = ({ patientId }) => {
     useEffect(() => {
         const fetchMedications = async () => {
             try {
-                const res = await axios.get(`http://localhost:9001/medications/PAnszXeXwD`);
+                const res = await axios.get(`/medications/PAnszXeXwD`);
                 setMedications(res.data);
             } catch (error) {
                 console.error("Error fetching medications:", error);
@@ -80,7 +80,7 @@ const Medication = ({ patientId }) => {
     // Handle adding medication
     const handleAddMedication = async (medicationData) => {
         try {
-            const res = await axios.post('http://localhost:9001/add-medication', {
+            const res = await axios.post('/add-medication', {
                 ...medicationData,
                 patientId: 'PAnszXeXwD',
             });

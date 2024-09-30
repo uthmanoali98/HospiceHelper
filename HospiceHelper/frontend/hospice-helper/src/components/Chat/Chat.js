@@ -14,7 +14,7 @@ const Chat = () => {
     useEffect(() => {
         const fetchChatList = async () => {
             try {
-                const res = await axios.get('http://localhost:9001/chats/USoG7PoIhX');
+                const res = await axios.get('/chats/USoG7PoIhX');
                 setChatList(res.data);
                 console.log(res.data); // Assuming res.data is a list of chats
             } catch (error) {
@@ -47,7 +47,7 @@ const Chat = () => {
 
         try {
             // Send the message to the backend
-            const res = await axios.post('http://localhost:9001/chat', {
+            const res = await axios.post('/chat', {
                 message: message,
                 userId: 'USoG7PoIhX'
             });
