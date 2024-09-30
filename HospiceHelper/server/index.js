@@ -77,5 +77,5 @@ app.post('/add-message', addMessage);
 
 
 
-consol.log("Hello Workd");
+consol.log("Hello World");
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
