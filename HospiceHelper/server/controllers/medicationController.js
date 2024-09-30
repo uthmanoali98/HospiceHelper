@@ -1,4 +1,4 @@
-const Medication = require('../models/medication');
+const Medication = require('../models/Medication');
 const OpenAI = require("openai");
 require('dotenv').config();
 
