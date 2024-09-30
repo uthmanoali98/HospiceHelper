@@ -167,7 +167,7 @@ const FamilyMembers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {familyMembers.map(member => (
+                    {Array.isArray(familyMembers) && familyMembers.map(member => (
                         <tr key={member._id} onClick={() => {
                             setSelectedMember(member);
                             setIsEditing(true);

@@ -126,7 +126,7 @@ const Medication = ({ patientId }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {medications.map((medication) => (
+                    {Array.isArray(medications) && medications.map((medication) => (
                         <tr key={medication._id} onClick={() => handleRowClick(medication)}>
                             <td>{medication.medicationName}</td>
                             <td>{medication.type}</td>
